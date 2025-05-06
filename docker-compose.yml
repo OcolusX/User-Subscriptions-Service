@@ -1,0 +1,38 @@
+version: '4.4'
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: userDB
+    environment:
+      POSTGRES_DB: user_subscriptions
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  app:
+    build: .
+    container_name: user-subscriptions-service
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/user_subscriptions
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 1234
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+    depends_on:
+      - postgres
+    networks:
+      - backend
+
+volumes:
+  pgdata:
+
+networks:
+  backend:

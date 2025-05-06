@@ -24,7 +24,7 @@ public class Subscription {
     @Column(nullable = false, unique = true)
     private String title;
 
-    @ManyToMany(mappedBy = "subscriptions", fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
     private Set<User> users = new HashSet<>();
 
 }

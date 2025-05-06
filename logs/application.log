@@ -1056,3 +1056,468 @@ Caused by: org.hibernate.query.sqm.PathElementException: Could not resolve attri
 2025-05-07 01:57:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-05-07 01:57:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2025-05-07 01:57:02 [main] INFO  c.e.u.UserSubscriptionsServiceApplication - Started UserSubscriptionsServiceApplication in 3.351 seconds (process running for 3.552)
+2025-05-07 02:13:23 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Starting UserSubscriptionIntegrationTest using Java 17.0.15 with PID 10624 (started by melch in c:\Users\melch\User Subscriptions Service)
+2025-05-07 02:13:23 [main] DEBUG c.e.u.i.UserSubscriptionIntegrationTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:13:23 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:13:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:13:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-07 02:13:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 02:13:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-07 02:13:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:13:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 02:13:24 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:13:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-07 02:13:24 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@543da15
+2025-05-07 02:13:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-07 02:13:24 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:13:24 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:13:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:13:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:13:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring TestDispatcherServlet ''
+2025-05-07 02:13:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:13:26 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Started UserSubscriptionIntegrationTest in 3.515 seconds (process running for 4.122)
+2025-05-07 02:13:26 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:13:26 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:13:26 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:13:26 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:13:26 [main] WARN  c.e.u.services.SubscriptionService - Subscription not found with title: Netflix
+2025-05-07 02:13:26 [main] DEBUG c.e.u.services.SubscriptionService - Creating subscription with title: Netflix
+2025-05-07 02:13:26 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:13:26 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:13:26 [main] ERROR org.hibernate.AssertionFailure - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: force initializing collection loading
+2025-05-07 02:13:27 [main] INFO  c.e.u.rest.UserControllerTest - Starting UserControllerTest using Java 17.0.15 with PID 10624 (started by melch in c:\Users\melch\User Subscriptions Service)
+2025-05-07 02:13:27 [main] DEBUG c.e.u.rest.UserControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:13:27 [main] INFO  c.e.u.rest.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:13:27 [main] INFO  c.e.u.rest.UserControllerTest - Started UserControllerTest in 0.326 seconds (process running for 5.042)
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.SubscriptionService - Removing subscription with ID 1 from user with ID 1
+2025-05-07 02:13:27 [main] DEBUG c.e.u.services.SubscriptionService - Subscription was removed with ID: 1 from user with ID: 1
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.SubscriptionService - Fetching top subscriptions with count: 3
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:13:27 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.UserService - Updating user with ID: 1
+2025-05-07 02:13:27 [main] DEBUG c.e.u.services.UserService - User updated with ID: 1
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.UserService - Getting user with ID: 1
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:13:27 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:13:27 [main] INFO  c.e.u.services.UserService - Deleting user with ID: 1
+2025-05-07 02:13:27 [main] DEBUG c.e.u.services.UserService - User was deleted with ID: 1
+2025-05-07 02:13:27 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Starting UserSubscriptionsServiceApplicationTests using Java 17.0.15 with PID 10624 (started by melch in c:\Users\melch\User Subscriptions Service)
+2025-05-07 02:13:27 [main] DEBUG c.e.u.UserSubscriptionsServiceApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:13:27 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:13:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:13:27 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:13:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-07 02:13:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7e452d2b
+2025-05-07 02:13:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-07 02:13:28 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:13:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:13:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:13:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:13:28 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Started UserSubscriptionsServiceApplicationTests in 0.556 seconds (process running for 5.994)
+2025-05-07 02:13:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-07 02:13:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-07 02:13:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-07 02:13:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-07 02:14:08 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Starting UserSubscriptionIntegrationTest using Java 17.0.15 with PID 828 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:14:08 [main] DEBUG c.e.u.i.UserSubscriptionIntegrationTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:14:08 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:14:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:14:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-07 02:14:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 02:14:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-07 02:14:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:14:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 02:14:09 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:14:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-07 02:14:09 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@114b203
+2025-05-07 02:14:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-07 02:14:10 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:14:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:14:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:14:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:14:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring TestDispatcherServlet ''
+2025-05-07 02:14:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:14:11 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Started UserSubscriptionIntegrationTest in 3.634 seconds (process running for 4.197)
+2025-05-07 02:14:12 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:14:12 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:14:12 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:14:12 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:14:12 [main] WARN  c.e.u.services.SubscriptionService - Subscription not found with title: Netflix
+2025-05-07 02:14:12 [main] DEBUG c.e.u.services.SubscriptionService - Creating subscription with title: Netflix
+2025-05-07 02:14:12 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:14:12 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:14:12 [main] ERROR org.hibernate.AssertionFailure - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: force initializing collection loading
+2025-05-07 02:14:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-07 02:14:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-07 02:14:42 [main] INFO  c.e.u.rest.UserControllerTest - Starting UserControllerTest using Java 17.0.15 with PID 33568 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:14:42 [main] DEBUG c.e.u.rest.UserControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:14:42 [main] INFO  c.e.u.rest.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:14:44 [main] INFO  c.e.u.rest.UserControllerTest - Started UserControllerTest in 1.754 seconds (process running for 2.323)
+2025-05-07 02:14:48 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Starting UserSubscriptionIntegrationTest using Java 17.0.15 with PID 35196 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:14:48 [main] DEBUG c.e.u.i.UserSubscriptionIntegrationTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:14:48 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:14:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:14:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-07 02:14:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 02:14:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-07 02:14:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:14:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 02:14:49 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:14:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-07 02:14:50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71d99732
+2025-05-07 02:14:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-07 02:14:50 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:14:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:14:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:14:51 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:14:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring TestDispatcherServlet ''
+2025-05-07 02:14:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:14:52 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Started UserSubscriptionIntegrationTest in 3.716 seconds (process running for 4.3)
+2025-05-07 02:14:52 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:14:52 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:14:52 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:14:52 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:14:52 [main] WARN  c.e.u.services.SubscriptionService - Subscription not found with title: Netflix
+2025-05-07 02:14:52 [main] DEBUG c.e.u.services.SubscriptionService - Creating subscription with title: Netflix
+2025-05-07 02:14:52 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:14:52 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:14:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-07 02:14:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-07 02:15:05 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Starting UserSubscriptionIntegrationTest using Java 17.0.15 with PID 17696 (started by melch in c:\Users\melch\User Subscriptions Service)
+2025-05-07 02:15:05 [main] DEBUG c.e.u.i.UserSubscriptionIntegrationTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:15:05 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:15:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:15:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-07 02:15:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 02:15:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-07 02:15:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:15:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 02:15:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:15:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-07 02:15:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@543da15
+2025-05-07 02:15:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-07 02:15:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:15:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:15:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:15:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:15:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring TestDispatcherServlet ''
+2025-05-07 02:15:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:15:09 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Started UserSubscriptionIntegrationTest in 3.521 seconds (process running for 4.137)
+2025-05-07 02:15:09 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:15:09 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:15:09 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:15:09 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:15:09 [main] WARN  c.e.u.services.SubscriptionService - Subscription not found with title: Netflix
+2025-05-07 02:15:09 [main] DEBUG c.e.u.services.SubscriptionService - Creating subscription with title: Netflix
+2025-05-07 02:15:09 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:15:09 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:15:09 [main] INFO  c.e.u.rest.UserControllerTest - Starting UserControllerTest using Java 17.0.15 with PID 17696 (started by melch in c:\Users\melch\User Subscriptions Service)
+2025-05-07 02:15:09 [main] DEBUG c.e.u.rest.UserControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:15:09 [main] INFO  c.e.u.rest.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:15:10 [main] INFO  c.e.u.rest.UserControllerTest - Started UserControllerTest in 0.308 seconds (process running for 4.997)
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.SubscriptionService - Removing subscription with ID 1 from user with ID 1
+2025-05-07 02:15:10 [main] DEBUG c.e.u.services.SubscriptionService - Subscription was removed with ID: 1 from user with ID: 1
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.SubscriptionService - Fetching top subscriptions with count: 3
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:15:10 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.UserService - Updating user with ID: 1
+2025-05-07 02:15:10 [main] DEBUG c.e.u.services.UserService - User updated with ID: 1
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.UserService - Getting user with ID: 1
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:15:10 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:15:10 [main] INFO  c.e.u.services.UserService - Deleting user with ID: 1
+2025-05-07 02:15:10 [main] DEBUG c.e.u.services.UserService - User was deleted with ID: 1
+2025-05-07 02:15:10 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Starting UserSubscriptionsServiceApplicationTests using Java 17.0.15 with PID 17696 (started by melch in c:\Users\melch\User Subscriptions Service)
+2025-05-07 02:15:10 [main] DEBUG c.e.u.UserSubscriptionsServiceApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:15:10 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:15:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:15:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:15:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-07 02:15:10 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5a9ee776
+2025-05-07 02:15:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-07 02:15:10 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:15:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:15:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:15:10 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:15:10 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Started UserSubscriptionsServiceApplicationTests in 0.533 seconds (process running for 5.896)
+2025-05-07 02:15:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-07 02:15:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-07 02:15:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-07 02:15:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-07 02:17:29 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Starting UserSubscriptionIntegrationTest using Java 17.0.15 with PID 32660 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:17:29 [main] DEBUG c.e.u.i.UserSubscriptionIntegrationTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:17:29 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:17:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:17:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-07 02:17:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 02:17:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-07 02:17:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:17:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 02:17:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:17:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-07 02:17:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@369a95a5
+2025-05-07 02:17:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-07 02:17:31 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:17:31 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:17:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:17:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:17:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring TestDispatcherServlet ''
+2025-05-07 02:17:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:17:33 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Started UserSubscriptionIntegrationTest in 3.589 seconds (process running for 4.23)
+2025-05-07 02:17:33 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:17:33 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:17:33 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:17:33 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:17:33 [main] WARN  c.e.u.services.SubscriptionService - Subscription not found with title: Netflix
+2025-05-07 02:17:33 [main] DEBUG c.e.u.services.SubscriptionService - Creating subscription with title: Netflix
+2025-05-07 02:17:33 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:17:33 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:17:33 [main] INFO  c.e.u.rest.UserControllerTest - Starting UserControllerTest using Java 17.0.15 with PID 32660 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:17:33 [main] DEBUG c.e.u.rest.UserControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:17:33 [main] INFO  c.e.u.rest.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:17:34 [main] INFO  c.e.u.rest.UserControllerTest - Started UserControllerTest in 0.35 seconds (process running for 5.165)
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.SubscriptionService - Removing subscription with ID 1 from user with ID 1
+2025-05-07 02:17:34 [main] DEBUG c.e.u.services.SubscriptionService - Subscription was removed with ID: 1 from user with ID: 1
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.SubscriptionService - Fetching top subscriptions with count: 3
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:17:34 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.UserService - Updating user with ID: 1
+2025-05-07 02:17:34 [main] DEBUG c.e.u.services.UserService - User updated with ID: 1
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.UserService - Getting user with ID: 1
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:17:34 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:17:34 [main] INFO  c.e.u.services.UserService - Deleting user with ID: 1
+2025-05-07 02:17:34 [main] DEBUG c.e.u.services.UserService - User was deleted with ID: 1
+2025-05-07 02:17:34 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Starting UserSubscriptionsServiceApplicationTests using Java 17.0.15 with PID 32660 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:17:34 [main] DEBUG c.e.u.UserSubscriptionsServiceApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:17:34 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:17:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:17:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:17:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-07 02:17:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@24d25c43
+2025-05-07 02:17:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-07 02:17:34 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:17:34 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:17:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:17:35 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:17:35 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Started UserSubscriptionsServiceApplicationTests in 0.567 seconds (process running for 6.108)
+2025-05-07 02:17:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-07 02:17:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-07 02:17:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-07 02:17:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-07 02:47:53 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Starting UserSubscriptionIntegrationTest using Java 17.0.15 with PID 12552 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:47:53 [main] DEBUG c.e.u.i.UserSubscriptionIntegrationTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:47:53 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:47:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:47:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-07 02:47:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 02:47:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-07 02:47:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:47:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 02:47:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:47:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-07 02:47:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16f4a3c0
+2025-05-07 02:47:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-07 02:47:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:47:55 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:47:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:47:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:47:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring TestDispatcherServlet ''
+2025-05-07 02:47:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:47:57 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Started UserSubscriptionIntegrationTest in 4.214 seconds (process running for 4.888)
+2025-05-07 02:47:57 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:47:57 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:47:57 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:47:57 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:47:57 [main] WARN  c.e.u.services.SubscriptionService - Subscription not found with title: Netflix
+2025-05-07 02:47:57 [main] DEBUG c.e.u.services.SubscriptionService - Creating subscription with title: Netflix
+2025-05-07 02:47:57 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:47:57 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:47:57 [main] INFO  c.e.u.rest.UserControllerTest - Starting UserControllerTest using Java 17.0.15 with PID 12552 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:47:57 [main] DEBUG c.e.u.rest.UserControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:47:57 [main] INFO  c.e.u.rest.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:47:58 [main] INFO  c.e.u.rest.UserControllerTest - Started UserControllerTest in 0.371 seconds (process running for 5.839)
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.SubscriptionService - Removing subscription with ID 1 from user with ID 1
+2025-05-07 02:47:58 [main] DEBUG c.e.u.services.SubscriptionService - Subscription was removed with ID: 1 from user with ID: 1
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.SubscriptionService - Fetching top subscriptions with count: 3
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:47:58 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.UserService - Updating user with ID: 1
+2025-05-07 02:47:58 [main] DEBUG c.e.u.services.UserService - User updated with ID: 1
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.UserService - Getting user with ID: 1
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:47:58 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:47:58 [main] INFO  c.e.u.services.UserService - Deleting user with ID: 1
+2025-05-07 02:47:58 [main] DEBUG c.e.u.services.UserService - User was deleted with ID: 1
+2025-05-07 02:47:58 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Starting UserSubscriptionsServiceApplicationTests using Java 17.0.15 with PID 12552 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:47:58 [main] DEBUG c.e.u.UserSubscriptionsServiceApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:47:58 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:47:58 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:47:58 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:47:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-07 02:47:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@37a1ac0
+2025-05-07 02:47:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-07 02:47:59 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:47:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:47:59 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:47:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:47:59 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Started UserSubscriptionsServiceApplicationTests in 0.738 seconds (process running for 7.044)
+2025-05-07 02:47:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-07 02:47:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-07 02:47:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-07 02:47:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-07 02:51:37 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Starting UserSubscriptionIntegrationTest using Java 17.0.15 with PID 18364 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:51:37 [main] DEBUG c.e.u.i.UserSubscriptionIntegrationTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:51:37 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:51:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:51:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-07 02:51:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 02:51:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-07 02:51:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:51:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 02:51:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:51:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-07 02:51:39 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16f4a3c0
+2025-05-07 02:51:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-07 02:51:39 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:51:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:51:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:51:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:51:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring TestDispatcherServlet ''
+2025-05-07 02:51:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-07 02:51:41 [main] INFO  c.e.u.i.UserSubscriptionIntegrationTest - Started UserSubscriptionIntegrationTest in 4.323 seconds (process running for 4.994)
+2025-05-07 02:51:42 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:51:42 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:51:42 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:51:42 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:51:42 [main] WARN  c.e.u.services.SubscriptionService - Subscription not found with title: Netflix
+2025-05-07 02:51:42 [main] DEBUG c.e.u.services.SubscriptionService - Creating subscription with title: Netflix
+2025-05-07 02:51:42 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:51:42 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:51:42 [main] INFO  c.e.u.rest.UserControllerTest - Starting UserControllerTest using Java 17.0.15 with PID 18364 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:51:42 [main] DEBUG c.e.u.rest.UserControllerTest - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:51:42 [main] INFO  c.e.u.rest.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:51:42 [main] INFO  c.e.u.rest.UserControllerTest - Started UserControllerTest in 0.347 seconds (process running for 5.927)
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.SubscriptionService - Removing subscription with ID 1 from user with ID 1
+2025-05-07 02:51:43 [main] DEBUG c.e.u.services.SubscriptionService - Subscription was removed with ID: 1 from user with ID: 1
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.SubscriptionService - Getting subscriptions for user with ID: 1
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.SubscriptionService - Fetching top subscriptions with count: 3
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.SubscriptionService - Adding subscriptions Netflix to user with ID 
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.SubscriptionService - Getting subscription with title: Netflix
+2025-05-07 02:51:43 [main] DEBUG c.e.u.services.SubscriptionService - Subscription Subscription(id=1, title=Netflix, users=[]) added to user with ID: 1
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.UserService - Updating user with ID: 1
+2025-05-07 02:51:43 [main] DEBUG c.e.u.services.UserService - User updated with ID: 1
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.UserService - Getting user with ID: 1
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.UserService - Creating user with name Dmitry, email: dmitry@example.com
+2025-05-07 02:51:43 [main] DEBUG c.e.u.services.UserService - User created with ID: 1
+2025-05-07 02:51:43 [main] INFO  c.e.u.services.UserService - Deleting user with ID: 1
+2025-05-07 02:51:43 [main] DEBUG c.e.u.services.UserService - User was deleted with ID: 1
+2025-05-07 02:51:43 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Starting UserSubscriptionsServiceApplicationTests using Java 17.0.15 with PID 18364 (started by melch in C:\Users\melch\User Subscriptions Service)
+2025-05-07 02:51:43 [main] DEBUG c.e.u.UserSubscriptionsServiceApplicationTests - Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 02:51:43 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-07 02:51:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 02:51:43 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-07 02:51:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-07 02:51:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@37a1ac0
+2025-05-07 02:51:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-07 02:51:43 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 02:51:43 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 02:51:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 02:51:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07 02:51:44 [main] INFO  c.e.u.UserSubscriptionsServiceApplicationTests - Started UserSubscriptionsServiceApplicationTests in 0.758 seconds (process running for 7.149)
+2025-05-07 02:51:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-07 02:51:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-07 02:51:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-07 02:51:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
